@@ -1,0 +1,2 @@
+class Changename < ApplicationRecord
+end
