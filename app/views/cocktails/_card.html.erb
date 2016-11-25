@@ -1,7 +1,12 @@
-<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://unsplash.it/200/200');">
+
+<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+         url('<%= cl_image_path cocktail.photo, height: 300, width: 400, crop: :fill %>')">
   <div class="card-description">
     <h2><%= cocktail.name %></h2>
+    <p><% cocktail.rating.times do %></p>
+    <div class="fa fa-star"></div>
+    <% end %>
   </div>
-  <img class="card-user avatar" src="http://unsplash.it/200/200">
+  <img class="card-user avatar" href="love.png">
   <a class="card-link" href="#" ></a>
 </div>

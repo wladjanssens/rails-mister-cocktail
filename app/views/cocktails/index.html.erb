@@ -5,12 +5,12 @@
 <div class="container">
   <div class="row">
     <% @cocktails.each do |r| %>
-    <div class="col-xs-12 col-sm-6">
+    <div class="col-xs-12 col-sm-3">
       <%= render "card", cocktail: r %>
-      <%= link_to 'Show', cocktail_path(r), class: "btn btn-primary margin-top-5"%>
+      <%= link_to 'show', cocktail_path(r), class: "btn btn-primary margin-top-5"%>
     </div>
     <% end %>
   </div>
+
 </div>
 
-<%= link_to 'New Cocktail', new_cocktail_path, {class: "blue_button btn btn-primary "} %>
